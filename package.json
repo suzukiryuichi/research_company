@@ -1,0 +1,18 @@
+{
+  "name": "company-note",
+  "version": "1.3.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "check": "node --check server.mjs && node --check research.mjs && node --check qwen-research.mjs && node --check company-site.mjs && node --check deep-research.mjs && node --check pdf-text.mjs && node --check src/app.js && node --check src/model.js && node --check src/research-ui.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "pdfjs-dist": "6.4.299"
+  }
+}
